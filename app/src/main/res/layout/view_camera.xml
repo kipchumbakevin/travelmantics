@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="16dp">
+
+
+
+    <TextView
+
+        android:id="@+id/textView4"
+
+        style="@android:style/TextAppearance.Material.Medium"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:text="Gallery"
+
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/dialog_gallarey" />
+
+
+
+    <TextView
+
+        android:id="@+id/camera_optiontxt"
+
+        style="@android:style/TextAppearance.Material.Large"
+
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="50dp"
+
+        android:layout_marginEnd="8dp"
+
+        android:text="Select how you wish to continue"
+
+        android:textAlignment="center"
+
+
+
+        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/linear" />
+
+
+
+    <ImageView
+
+        android:id="@+id/dialog_gallarey"
+
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+
+        android:layout_marginStart="8dp"
+
+        android:tint="@color/colorPrimary"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+
+        app:srcCompat="@drawable/ic_menu_gallery" />
+
+
+
+    <android.support.constraint.Guideline
+
+        android:id="@+id/guideline"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical" />
+
+
+
+    <android.support.constraint.Guideline
+
+        android:id="@+id/guideline2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_end="16dp" />
+
+
+
+    <ImageView
+
+        android:id="@+id/dialog_camera"
+
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+
+        android:tint="@color/colorPrimary"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+
+        app:srcCompat="@drawable/ic_camera_enhance" />
+
+
+
+    <android.support.constraint.Guideline
+
+        android:id="@+id/guideline3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_begin="198dp" />
+
+
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="Camera"
+
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+
+        app:layout_constraintTop_toBottomOf="@+id/dialog_camera" />
+
+
+
+    <ImageView
+
+        android:id="@+id/dialog_close"
+
+        android:layout_width="24dp"
+
+        android:layout_height="24dp"
+
+        android:tint="@color/nav_icons_default"
+
+        app:layout_editor_absoluteX="387dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="@id/linear"
+
+        app:srcCompat="@drawable/ic_close_black_24dp" />
+
+
+
+    <LinearLayout
+
+        android:id="@+id/linear"
+
+        android:background="@color/colorPrimary"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="80dp"
+
+        android:orientation="vertical"
+
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="50dp"
+
+            android:src="@mipmap/ic_launcher_round"
+
+            android:layout_gravity="center"
+
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
